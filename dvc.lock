@@ -73,7 +73,7 @@ stages:
       params.yaml:
         AUGMENTATION: true
         BATCH_SIZE: 32
-        EPOCHS: 1
+        EPOCHS: 10
         IMAGE_SIZE:
         - 224
         - 224
@@ -81,7 +81,7 @@ stages:
     outs:
     - path: artifacts/training/model.h5
       hash: md5
-      md5: 46695e6a30bdf8804318db711b78251a
+      md5: c9c7758305d1bf6dd128c59e7652aa4d
       size: 27636816
   evaluation:
     cmd: python src/birdClassifier/pipeline/stage_4_evaluation.py
@@ -93,7 +93,7 @@ stages:
       nfiles: 4530
     - path: artifacts/training/model.h5
       hash: md5
-      md5: 46695e6a30bdf8804318db711b78251a
+      md5: c9c7758305d1bf6dd128c59e7652aa4d
       size: 27636816
     - path: config/config.yaml
       hash: md5
@@ -113,5 +113,5 @@ stages:
     outs:
     - path: scores.json
       hash: md5
-      md5: ab4f4807d0c5052f40c746c2ed44f33e
-      size: 74
+      md5: c67275149ee36b9d4c831fbbb3795e9b
+      size: 73

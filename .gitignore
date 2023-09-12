@@ -1,4 +1,7 @@
-artifacts/
+artifacts/data_ingestion
+artifacts/prepare_base_model
+artifacts/prepare_callbacks
+static/uploads
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
