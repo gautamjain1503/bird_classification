@@ -36,6 +36,7 @@ def upload_image():
         bird_predict=bird_class.predict()
         image_inst = cv2.imread(image_path)
         flash('Successfull')
+        os.remove(image_path)
         return render_template('main.html', filename=filename, read_lines=bird_predict, image=image_inst)
     else:
         flash('Allowed image types are - png, jpg, jpeg')
