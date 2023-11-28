@@ -31,7 +31,7 @@
 **/secrets.dev.yaml
 **/values.dev.yaml
 LICENSE
-/artifacts/data_ingestion
-/artifacts/prepare_base_model
-/artifacts/prepare_callbacks
+artifacts/data_ingestion/
+artifacts/prepare_base_model/
+artifacts/prepare_callbacks/
 
